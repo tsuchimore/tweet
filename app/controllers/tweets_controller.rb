@@ -22,6 +22,7 @@ before_action :set_tweet, only:[:edit, :update, :destroy]
   end
   
   def edit
+    render :new if @tweet.invalid?
   end
   
   def update
