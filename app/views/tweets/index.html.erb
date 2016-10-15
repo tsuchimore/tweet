@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="wrapper col-md-4">
+      <div class="fimage">
+      <img src="<%= asset_path "profile.jpg" %>" class="img-responsive">
+      <p>ツッチー</p>
+      
+      </div>
+    </div>  
+    <div class="wrapper col-md-8">
+      <% @tweets.each do |tweet| %>
+      <div class="row">
+        <%= tweet.content %><br>
+        <%= link_to "編集", edit_tweet_path(tweet.id),class: 'btn btn-default btn-sm btn-success' %>
+        <%= link_to "削除", tweet_path(tweet.id), method: :delete, data:{confirm:"本当によろしいですか？"}, class: 'btn btn-default' %>
+        <br>
+      </div>
+      <% end %>
+
+    </div>
+  </div>
+</div>
