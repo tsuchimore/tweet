@@ -60,6 +60,18 @@ header {
     word-wrap: break-word;
   }
 }
+.wrapper2 {
+  margin: 0px auto 74px;
+  padding: 20px 20px 20px 35px;
+  width: 300px;
+  border: solid 1px #eee;
+  .row {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: left;
+    word-wrap: break-word;
+  }
+}
 input[type="submit"].btn-block{
   margin: 15px 0;
 }
@@ -67,12 +79,40 @@ input[type="submit"].btn-block{
 .container{
   padding-bottom: 85px;
 }
-.img-responsive {
+.img-responsive-1 {
   display: block;
   height: auto;
-  max-width: 100%;
+  width: 296px;
+  position: relative;
+  margin-top: 20px;
+
 }
-.fimage p {
-    font-size: 150%;
-    text-align: center;
+.img-responsive-2 {
+  display: block;
+  height: auto;
+  width: 72px;
+  border:solid 3px white;
+  border-radius: 2px;
+  position: absolute;
+  bottom:10px;
+  left:45px;
 }
+// .left_pro{
+//   float:left;
+//   display: inline-block;
+//   font-size: 12px;
+// }
+// .name p {
+//   float: right;
+// }
+// .fimage{
+//   width: 300px;
+
+// }
+// .tweet{
+//   width: 300px;
+// }
+// .fimage p {
+//     font-size: 150%;
+//     text-align: center;
+// }
